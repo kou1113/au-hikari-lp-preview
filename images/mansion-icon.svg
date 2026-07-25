@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-labelledby="title">
+  <title id="title">マンション</title>
+  <g fill="none" stroke="#152d5b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 164V26h152v138M42 164h176"/>
+    <path d="M72 48h34v22H72zm52 0h34v22h-34zm52 0h14v22h-14zM72 86h34v22H72zm52 0h34v22h-34zm52 0h14v22h-14zM72 124h34v22H72zm84 40v-40h34v40"/>
+  </g>
+  <path fill="#eb5505" d="M47 17h166v18H47zm18 61h134v9H65zm0 38h134v9H65z"/>
+  <path fill="#ffdfcc" d="M77 53h24v12H77zm52 0h24v12h-24zM77 91h24v12H77zm52 0h24v12h-24z"/>
+</svg>

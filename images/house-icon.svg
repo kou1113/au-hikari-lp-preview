@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-labelledby="title">
+  <title id="title">一戸建て</title>
+  <g fill="none" stroke="#152d5b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 82 130 18l105 64"/>
+    <path d="M43 74v88h174V74"/>
+    <path d="M106 162v-57h45v57M62 96h28v28H62zM169 96h29v28h-29z"/>
+    <path d="M33 162h194"/>
+  </g>
+  <path fill="#eb5505" d="m24 76 106-65 106 65-8 13-98-59-98 59z"/>
+  <path fill="#ffdfcc" d="M67 101h18v18H67zm107 0h19v18h-19z"/>
+</svg>

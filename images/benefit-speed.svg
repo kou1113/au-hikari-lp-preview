@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">最大10ギガ対応</title>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#eb5505"/>
+  <text x="80" y="93" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="900" text-anchor="middle">10G</text>
+  <path d="M42 113h76" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+</svg>
