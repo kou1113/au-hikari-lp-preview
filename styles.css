@@ -214,6 +214,23 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
 .contact-box { margin-top: 22px; padding: 22px; border-radius: 10px; background: #f7f9fa; }
 .contact-box p { margin: 4px 0; }
 
+/* Thank-you page */
+.thanks-page { display: flex; flex-direction: column; background: #f5f7f9; }
+.thanks-main { min-height: calc(100vh - 178px); padding: 64px 0 80px; display: grid; align-items: center; }
+.thanks-card { padding: 54px 60px; border-radius: 24px; background: #fff; box-shadow: var(--shadow); text-align: center; }
+.thanks-check { width: 70px; height: 70px; margin: 0 auto 18px; display: grid; place-items: center; color: #fff; border-radius: 50%; background: var(--orange); box-shadow: 0 10px 24px rgba(235,85,5,.22); font-size: 36px; font-weight: 900; line-height: 1; }
+.thanks-kicker { margin: 0 0 7px; color: var(--orange); font-size: 10px; font-weight: 900; letter-spacing: .18em; }
+.thanks-card h1 { margin: 0 0 18px; color: var(--indigo); font-size: clamp(30px, 4vw, 42px); line-height: 1.4; letter-spacing: -.025em; }
+.thanks-lead { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.callback-box { max-width: 610px; margin: 34px auto 24px; padding: 25px 24px 23px; border: 2px solid #ffd4b8; border-radius: 18px; background: var(--cream); }
+.callback-label { margin: 0 0 7px; color: var(--ink); font-size: 15px; font-weight: 900; }
+.callback-box a { display: inline-block; color: var(--orange); font-size: clamp(34px, 6vw, 50px); font-weight: 900; line-height: 1.2; letter-spacing: -.045em; text-decoration: none; }
+.callback-note { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+.thanks-notes { color: var(--muted); font-size: 11px; line-height: 1.75; }
+.thanks-notes p { margin: 4px 0; }
+.temporary-number-note { color: #8a5b3f; }
+.thanks-home { width: min(320px, 100%); min-height: 56px; margin: 30px auto 0; padding: 13px 22px; display: flex; justify-content: center; align-items: center; color: #fff; border-radius: 999px; background: var(--indigo); box-shadow: 0 9px 22px rgba(21,45,91,.18); font-size: 15px; font-weight: 900; text-decoration: none; }
+
 @media (max-width: 800px) {
   html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
   .lp-body { padding-bottom: calc(86px + env(safe-area-inset-bottom)); -webkit-font-smoothing: antialiased; }
@@ -336,6 +353,16 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .document-card table, .document-card tbody, .document-card tr, .document-card th, .document-card td { display: block; }
   .document-card th { width: 100%; padding: 10px 12px; }
   .document-card td { padding: 12px; }
+  .thanks-main { min-height: calc(100vh - 150px); padding: 36px 0 48px; }
+  .thanks-card { padding: 38px 18px 34px; border-radius: 18px; }
+  .thanks-check { width: 60px; height: 60px; margin-bottom: 16px; font-size: 30px; }
+  .thanks-card h1 { margin-bottom: 14px; font-size: 28px; line-height: 1.45; }
+  .thanks-lead { font-size: 13px; line-height: 1.8; }
+  .callback-box { margin: 28px auto 21px; padding: 21px 10px 19px; border-radius: 14px; }
+  .callback-label { font-size: 13px; }
+  .callback-box a { font-size: clamp(31px, 9.2vw, 39px); }
+  .callback-note { font-size: 11px; }
+  .thanks-notes { font-size: 10px; }
 }
 
 @media (max-width: 360px) {
