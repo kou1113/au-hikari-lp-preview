@@ -212,7 +212,7 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
 
 @media (max-width: 800px) {
   html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
-  .lp-body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); -webkit-font-smoothing: antialiased; }
+  .lp-body { padding-bottom: calc(86px + env(safe-area-inset-bottom)); -webkit-font-smoothing: antialiased; }
   main, main > section { width: 100%; max-width: 100%; overflow-x: clip; }
   .container, .narrow { width: calc(100% - 28px); max-width: 1120px; }
   .sp-only { display: block; }
@@ -309,7 +309,7 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .privacy-check { align-items: flex-start; justify-content: flex-start; }
   .privacy-check input { width: 20px; height: 20px; margin-top: 3px; flex: 0 0 auto; }
   .company-links { flex-direction: column; gap: 8px; }
-  .sticky-cta { position: fixed; z-index: 50; right: 0; bottom: 0; left: 0; width: 100vw; max-width: 100vw; height: calc(68px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; visibility: hidden; background: var(--indigo-dark); box-shadow: 0 -8px 28px rgba(0,0,0,.17); opacity: 0; transform: translateY(100%); pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s; }
+  .sticky-cta { position: fixed; z-index: 50; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); left: 8px; width: auto; max-width: none; height: 68px; display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; visibility: hidden; border: 2px solid rgba(255,255,255,.92); border-radius: 15px; background: var(--indigo-dark); box-shadow: 0 8px 28px rgba(7,23,47,.32); opacity: 0; transform: translateY(100%); pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s; }
   .sticky-cta.is-visible { visibility: visible; opacity: 1; transform: translateY(0); pointer-events: auto; transition-delay: 0s; }
   .sticky-cta a { min-width: 0; }
   .sticky-cta small { font-size: 8px; }
