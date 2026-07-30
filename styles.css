@@ -28,9 +28,8 @@ a { color: inherit; }
 .site-header { position: relative; z-index: 5; background: #fff; border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 82px; display: flex; align-items: center; gap: 24px; }
 .brand { margin-right: auto; display: flex; align-items: center; gap: 11px; color: var(--indigo); text-decoration: none; line-height: 1.15; }
-.brand-symbol { width: 47px; height: 40px; flex: 0 0 auto; display: grid; place-items: center; color: #fff; border-radius: 13px 13px 4px 13px; background: linear-gradient(145deg, #ff8a28, #e54800); box-shadow: 0 7px 16px rgba(235,85,5,.2); font: 900 22px/1 "Helvetica Neue", Arial, sans-serif; letter-spacing: -.09em; transform: rotate(-2deg); }
 .brand-copy { display: block; }
-.brand strong { display: block; color: var(--indigo); font-size: 24px; font-weight: 900; letter-spacing: -.055em; transform: translateY(3px); }
+.brand strong { display: block; color: var(--indigo); font-size: 24px; font-weight: 900; letter-spacing: -.055em; }
 .brand small { display: block; margin-top: 3px; color: #687383; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
 .header-contact { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.3; }
 .header-contact span { color: var(--muted); font-size: 10px; font-weight: 700; }
@@ -244,7 +243,6 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .operator-inner p { overflow-wrap: anywhere; }
   .header-inner { min-height: 64px; }
   .brand { gap: 9px; }
-  .brand-symbol { width: 42px; height: 36px; border-radius: 11px 11px 4px 11px; font-size: 20px; }
   .brand strong { font-size: 21px; }
   .brand small { margin-top: 3px; font-size: 8px; }
   .header-contact, .header-apply { display: none; }
@@ -370,7 +368,6 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
 @media (max-width: 360px) {
   .container, .narrow { width: calc(100% - 20px); }
   .operator-bar { font-size: 7px; }
-  .brand-symbol { width: 39px; height: 34px; font-size: 18px; }
   .brand strong { font-size: 19px; }
   .hero-message { padding-right: 4%; padding-left: 8%; }
   .hero-overline { font-size: 21px; }
