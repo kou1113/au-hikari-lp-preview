@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="新居のインターネットにauひかり。提供エリアの確認から新規お申し込み、開通まで株式会社HTコネクションがご案内します。">
   <title>新居のインターネットにauひかり｜株式会社HTコネクション</title>
-  <link rel="stylesheet" href="styles.css?v=20260716-family-hero">
+  <link rel="stylesheet" href="styles.css?v=20260730-sticky-footer-2">
 </head>
 <body class="lp-body">
   <div class="operator-bar">
@@ -17,8 +17,11 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="ページ先頭へ">
-        <img class="brand-image" src="images/au-hikari-header-logo-v2.webp" alt="auひかり" width="354" height="58">
+      <a class="brand" href="#top" aria-label="auひかり ページ先頭へ">
+        <span class="brand-symbol" aria-hidden="true">au</span>
+        <span class="brand-copy">
+          <strong>auひかり</strong>
+        </span>
       </a>
       <div class="header-contact">
         <span>電話でのご相談（10:00〜19:00）</span>
@@ -31,18 +34,9 @@
   <main id="top">
     <section class="hero-new">
       <div class="container hero-banner">
-        <img src="images/au-family-moving-hero-v2.png" alt="新居でインターネットを楽しむご家族" width="1672" height="941">
-        <div class="hero-message">
-          <p class="hero-label">auひかり 新規お申し込み窓口</p>
-          <h1><span>お引越し先の<br>インターネットも</span><em><b class="au-word">au</b><b class="hikari-word">ひかり</b></em></h1>
-          <p class="hero-lead">新居ですぐに使えるように、<br>今から準備をはじめませんか？</p>
-          <ul class="hero-points" aria-label="auひかりの特長">
-            <li>高速・安定</li>
-            <li>新居のエリア確認</li>
-            <li>専門スタッフがご案内</li>
-          </ul>
-          <a class="hero-cta" href="#apply"><small>24時間受付中</small><b>Webでお申し込み</b><span>›</span></a>
-        </div>
+        <h1 class="hero-image-heading">
+          <img src="images/au-hikari-hero-simple-v4.png" alt="お引越し先のネットは、auひかり。最大通信速度10Gbps対応。一部エリアでの提供です。" width="1672" height="941">
+        </h1>
       </div>
     </section>
 
@@ -63,11 +57,28 @@
       </div>
     </section>
 
+    <section class="moving-support" aria-label="お引越しの相談窓口">
+      <div class="container">
+        <div class="moving-support-heading">
+          <h2>ネットのご相談はこちら</h2>
+          <p>お引越し先の光回線を、専門スタッフがわかりやすくご案内します</p>
+        </div>
+        <div class="moving-support-card">
+          <span class="support-bubble support-bubble-one" aria-hidden="true"></span>
+          <span class="support-bubble support-bubble-two" aria-hidden="true"></span>
+          <p class="support-eyebrow">新居のネット選びをまとめてサポート</p>
+          <h3>お引越しの相談窓口</h3>
+          <a href="tel:0120911694"><span>☎</span>0120-911-694</a>
+          <p>提供エリアの確認から工事日程まで、専任スタッフがご案内します。</p>
+        </div>
+      </div>
+    </section>
+
     <section class="timing-notice">
       <div class="container narrow">
         <span class="notice-mark">!</span>
-        <h2>新居ですぐ使うなら、<br class="sp-only">早めのお申し込みがおすすめです</h2>
-        <p>お住まいの地域や建物、工事の混雑状況によって、開通までお時間がかかる場合があります。新住所が決まりましたら、まずは提供エリアをご確認ください。</p>
+        <h2>お申し込みが遅れると、<br class="sp-only"><strong>開通までお待ちいただく</strong>場合があります</h2>
+        <p>お住まいの地域や建物、工事の混雑状況によって、開通までお時間がかかる場合があります。土日祝などは工事予約が埋まりやすいため、新住所が決まりましたら早めのエリア確認・お申し込みがおすすめです。</p>
       </div>
     </section>
 
@@ -150,18 +161,56 @@
         </div>
         <form class="contact-form" id="contact-form" action="#" method="post">
           <fieldset>
-            <legend>新居・お引越し情報</legend>
-            <label><span>新居の住所 <i>任意</i></span><input type="text" name="new_address" autocomplete="street-address" placeholder="例）東京都渋谷区○○ 1-2-3"></label>
-            <label><span>お引越し予定日 <i>任意</i></span><input type="date" name="moving_date"></label>
-            <label><span>住居タイプ <i>任意</i></span><select name="housing_type"><option value="">選択してください</option><option value="house">一戸建て</option><option value="mansion">マンション・アパート</option><option value="unknown">未定・わからない</option></select></label>
+            <legend>現住所・引越し先住所</legend>
+            <p class="form-group-title">現在のご住所 <i>任意</i></p>
+            <label><span>郵便番号</span><input type="text" name="current_zip" autocomplete="postal-code" inputmode="numeric" placeholder="例）1234567（ハイフンなし）"></label>
+            <label><span>都道府県</span><select name="current_pref" autocomplete="address-level1"><option value="">選択してください</option><option>北海道</option><option>青森県</option><option>岩手県</option><option>宮城県</option><option>秋田県</option><option>山形県</option><option>福島県</option><option>茨城県</option><option>栃木県</option><option>群馬県</option><option>埼玉県</option><option>千葉県</option><option>東京都</option><option>神奈川県</option><option>新潟県</option><option>富山県</option><option>石川県</option><option>福井県</option><option>山梨県</option><option>長野県</option><option>岐阜県</option><option>静岡県</option><option>愛知県</option><option>三重県</option><option>滋賀県</option><option>京都府</option><option>大阪府</option><option>兵庫県</option><option>奈良県</option><option>和歌山県</option><option>鳥取県</option><option>島根県</option><option>岡山県</option><option>広島県</option><option>山口県</option><option>徳島県</option><option>香川県</option><option>愛媛県</option><option>高知県</option><option>福岡県</option><option>佐賀県</option><option>長崎県</option><option>熊本県</option><option>大分県</option><option>宮崎県</option><option>鹿児島県</option><option>沖縄県</option></select></label>
+            <label><span>それ以降のご住所</span><input type="text" name="current_addr" autocomplete="street-address" placeholder="例）港区赤坂1-2-3 ABCマンション101号室"></label>
+
+            <p class="form-group-title">引越し先のご住所 <i>任意</i></p>
+            <label><span>郵便番号</span><input type="text" name="move_zip" inputmode="numeric" placeholder="例）1234567（ハイフンなし）"></label>
+            <label><span>都道府県</span><select name="move_pref"><option value="">選択してください</option><option>北海道</option><option>青森県</option><option>岩手県</option><option>宮城県</option><option>秋田県</option><option>山形県</option><option>福島県</option><option>茨城県</option><option>栃木県</option><option>群馬県</option><option>埼玉県</option><option>千葉県</option><option>東京都</option><option>神奈川県</option><option>新潟県</option><option>富山県</option><option>石川県</option><option>福井県</option><option>山梨県</option><option>長野県</option><option>岐阜県</option><option>静岡県</option><option>愛知県</option><option>三重県</option><option>滋賀県</option><option>京都府</option><option>大阪府</option><option>兵庫県</option><option>奈良県</option><option>和歌山県</option><option>鳥取県</option><option>島根県</option><option>岡山県</option><option>広島県</option><option>山口県</option><option>徳島県</option><option>香川県</option><option>愛媛県</option><option>高知県</option><option>福岡県</option><option>佐賀県</option><option>長崎県</option><option>熊本県</option><option>大分県</option><option>宮崎県</option><option>鹿児島県</option><option>沖縄県</option></select></label>
+            <label><span>それ以降のご住所</span><input type="text" name="move_addr" placeholder="例）港区赤坂1-2-3 ABCマンション101号室"></label>
+
+            <p class="form-group-title">引越しの予定日</p>
+            <label>
+              <span>予定月日</span>
+              <span class="field-inline">
+                <select name="move_month"><option value="">月を選択</option><option value="未定">未定</option><option value="引越済み">引越済み</option><option value="1">1月</option><option value="2">2月</option><option value="3">3月</option><option value="4">4月</option><option value="5">5月</option><option value="6">6月</option><option value="7">7月</option><option value="8">8月</option><option value="9">9月</option><option value="10">10月</option><option value="11">11月</option><option value="12">12月</option></select>
+                <select name="move_day"><option value="">日を選択</option><option>1日</option><option>2日</option><option>3日</option><option>4日</option><option>5日</option><option>6日</option><option>7日</option><option>8日</option><option>9日</option><option>10日</option><option>11日</option><option>12日</option><option>13日</option><option>14日</option><option>15日</option><option>16日</option><option>17日</option><option>18日</option><option>19日</option><option>20日</option><option>21日</option><option>22日</option><option>23日</option><option>24日</option><option>25日</option><option>26日</option><option>27日</option><option>28日</option><option>29日</option><option>30日</option><option>31日</option></select>
+              </span>
+            </label>
           </fieldset>
           <fieldset>
             <legend>お客さま情報</legend>
             <label><span>お名前 <i class="required">必須</i></span><input type="text" name="name" autocomplete="name" required placeholder="例）山田 太郎"></label>
             <label><span>フリガナ <i class="required">必須</i></span><input type="text" name="kana" required pattern="[ァ-ヶー\u3000 ]+" placeholder="例）ヤマダ タロウ"></label>
             <label><span>電話番号 <i class="required">必須</i></span><input type="tel" name="tel" autocomplete="tel" inputmode="tel" required pattern="[0-9-]{10,13}" placeholder="例）09012345678"></label>
-            <label><span>ご連絡希望日時 <i>任意</i></span><input type="text" name="preferred_time" placeholder="例）7月20日 14時〜16時"></label>
-            <label><span>ご質問・ご要望 <i>任意</i></span><textarea name="message" rows="4" placeholder="ご質問があればご記入ください"></textarea></label>
+            <label><span>メールアドレス <i>任意</i></span><input type="email" name="email" autocomplete="email" placeholder="例）example@mail.com"></label>
+            <label>
+              <span>ご連絡希望日 <i>任意</i></span>
+              <select name="contact_day">
+                <option value="">指定なし</option>
+                <option value="月曜日">月曜日</option>
+                <option value="火曜日">火曜日</option>
+                <option value="水曜日">水曜日</option>
+                <option value="木曜日">木曜日</option>
+                <option value="金曜日">金曜日</option>
+                <option value="土曜日">土曜日</option>
+                <option value="日曜日">日曜日</option>
+              </select>
+            </label>
+            <label>
+              <span>ご連絡希望時間 <i>任意</i></span>
+              <select name="contact_time">
+                <option value="">指定なし</option>
+                <option value="10:00-12:00">10:00-12:00</option>
+                <option value="12:00-15:00">12:00-15:00</option>
+                <option value="15:00-18:00">15:00-18:00</option>
+                <option value="18:00以降">18:00以降</option>
+              </select>
+            </label>
+            <label><span>お問い合わせ内容 <i>任意</i></span><textarea name="message" rows="4" placeholder="ご質問やご要望があれば入力してください"></textarea></label>
           </fieldset>
           <label class="privacy-check"><input type="checkbox" required><span><a href="privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</span></label>
           <button class="form-submit" type="submit">Webで申し込む <span>›</span></button>
@@ -183,10 +232,10 @@
 
   <footer class="site-footer"><p>Copyright © 株式会社HTコネクション All Rights Reserved.</p></footer>
 
-  <div class="sticky-cta" aria-label="お申し込み・お問い合わせ">
+  <div class="sticky-cta" aria-label="お申し込み・お問い合わせ" aria-hidden="true">
     <a class="sticky-phone" href="tel:0120911694"><small>受付 10:00〜19:00</small><b>☎ 電話でご相談</b></a>
     <a class="sticky-web" href="#apply"><small>24時間受付中</small><b>Webでお申し込み</b></a>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260730-sticky-footer-2"></script>
 </body>
 </html>
