@@ -38,8 +38,9 @@ a { color: inherit; }
 
 .hero-new { padding: 38px 0 2px; background: #fff; }
 .hero-banner { position: relative; overflow: hidden; border-radius: 28px; background: var(--indigo); box-shadow: 0 22px 55px rgba(10,29,64,.22); }
-.hero-image-heading { margin: 0; line-height: 0; }
-.hero-image-heading img { width: 100%; height: auto; display: block; }
+.hero-image-heading { margin: 0; aspect-ratio: 1672 / 941; line-height: 0; }
+.hero-image-heading img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.hero-pattern2 { display: none !important; }
 .hero-message { position: relative; z-index: 2; padding: 52px 6% 58px 13%; color: #fff; text-align: left; }
 .hero-overline { margin: 0 0 10px; font-size: clamp(27px, 3.2vw, 44px); font-weight: 900; line-height: 1.35; letter-spacing: .02em; text-shadow: 0 4px 12px rgba(0,0,0,.24); }
 .hero-message h1 { margin: 0 0 20px; color: #fff; font-size: clamp(64px, 8vw, 106px); font-weight: 900; line-height: 1.05; letter-spacing: -.07em; text-shadow: 0 6px 16px rgba(0,0,0,.3); }
@@ -393,57 +394,62 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .sticky-cta b { font-size: 11px; }
 }
 
-/* Pattern 2: navy canvas, white surfaces and stronger orange actions */
+/* Pattern 2: warm white, orange and charcoal; intentionally no navy or blue */
 html[data-theme="pattern2"] {
   --orange: #f36a21;
   --orange-light: #ff944d;
-  --indigo: #0b2748;
-  --indigo-dark: #04182d;
+  --indigo: #4a352b;
+  --indigo-dark: #2a1c16;
   --cream: #fff6ef;
-  --ink: #17283c;
-  --muted: #637286;
-  --line: #dce4ec;
-  --shadow: 0 18px 48px rgba(2, 17, 34, .22);
-  background: var(--indigo-dark);
+  --ink: #302823;
+  --muted: #746862;
+  --line: #eadfd7;
+  --shadow: 0 18px 48px rgba(76, 45, 26, .16);
+  background: #fffaf6;
 }
-html[data-theme="pattern2"] .lp-body { background: var(--indigo); }
-html[data-theme="pattern2"] .operator-bar { color: #dbe5ef; border-bottom-color: rgba(255,255,255,.12); background: var(--indigo-dark); }
-html[data-theme="pattern2"] .site-header { border-bottom: 4px solid var(--orange); box-shadow: 0 8px 22px rgba(2,17,34,.18); }
+html[data-theme="pattern2"] .lp-body { background: #fffaf6; }
+html[data-theme="pattern2"] .operator-bar { color: #fff3eb; border-bottom-color: rgba(255,255,255,.14); background: #3b2a22; }
+html[data-theme="pattern2"] .site-header { border-bottom: 4px solid var(--orange); box-shadow: 0 8px 22px rgba(76,45,26,.15); }
 html[data-theme="pattern2"] .brand strong { color: var(--indigo-dark); }
 html[data-theme="pattern2"] .header-apply { background: linear-gradient(110deg, var(--orange), var(--orange-light)); }
-html[data-theme="pattern2"] .hero-new { padding-bottom: 28px; background: var(--indigo); }
-html[data-theme="pattern2"] .hero-banner { border: 2px solid rgba(255,255,255,.18); box-shadow: 0 24px 58px rgba(0,0,0,.28); }
-html[data-theme="pattern2"] .quick-contact { padding-top: 0; background: var(--indigo); }
-html[data-theme="pattern2"] .contact-choice { border: 0; border-top: 6px solid var(--orange); box-shadow: 0 22px 52px rgba(0,0,0,.24); }
-html[data-theme="pattern2"] .moving-support { background: var(--indigo); }
-html[data-theme="pattern2"] .moving-support-heading h2 { color: #fff; }
-html[data-theme="pattern2"] .moving-support-heading p { color: #d7e2ee; }
+html[data-theme="pattern2"] .hero-pattern1 { display: none; }
+html[data-theme="pattern2"] .hero-pattern2 { display: block !important; }
+html[data-theme="pattern2"] .hero-new { padding-bottom: 28px; background: #fffaf6; }
+html[data-theme="pattern2"] .hero-banner { border: 2px solid #ffe0cc; background: #fff8ef; box-shadow: 0 24px 58px rgba(103,56,25,.16); }
+html[data-theme="pattern2"] .quick-contact { padding-top: 0; background: #fffaf6; }
+html[data-theme="pattern2"] .contact-choice { border: 1px solid #ffe0cc; border-top: 6px solid var(--orange); box-shadow: 0 22px 52px rgba(103,56,25,.14); }
+html[data-theme="pattern2"] .moving-support { background: #fffaf6; }
+html[data-theme="pattern2"] .moving-support-heading h2 { color: var(--ink); }
+html[data-theme="pattern2"] .moving-support-heading p { color: var(--muted); }
 html[data-theme="pattern2"] .moving-support-card { border: 2px solid rgba(255,255,255,.36); background: linear-gradient(120deg, #e95008, var(--orange-light)); box-shadow: 0 20px 48px rgba(0,0,0,.24); }
 html[data-theme="pattern2"] .timing-notice { border-block: 0; background: #fff; }
-html[data-theme="pattern2"] .pricing { background: #0d3157; }
-html[data-theme="pattern2"] .pricing h2 { color: #fff; }
-html[data-theme="pattern2"] .pricing .section-intro { color: #d6e2ee; }
-html[data-theme="pattern2"] .price-card { border-color: rgba(255,255,255,.35); box-shadow: 0 18px 42px rgba(0,0,0,.24); }
+html[data-theme="pattern2"] .pricing { background: #fff0e5; }
+html[data-theme="pattern2"] .pricing h2 { color: var(--ink); }
+html[data-theme="pattern2"] .pricing .section-intro { color: var(--muted); }
+html[data-theme="pattern2"] .price-card { border-color: #f3d8c7; box-shadow: 0 18px 42px rgba(103,56,25,.14); }
 html[data-theme="pattern2"] .price-card-head { background: var(--indigo-dark); }
 html[data-theme="pattern2"] .price-card.featured .price-card-head { background: var(--orange); }
-html[data-theme="pattern2"] .benefits { background: linear-gradient(180deg, #fff 0%, #fff 55%, #f1f5f8 55%, #f1f5f8 100%); }
-html[data-theme="pattern2"] .benefit-grid .benefit-banner { border-top-width: 5px; box-shadow: 0 14px 32px rgba(4,24,45,.1); }
-html[data-theme="pattern2"] .process { background: var(--indigo-dark); }
+html[data-theme="pattern2"] .building-illustration,
+html[data-theme="pattern2"] .phone-benefit .benefit-icon { filter: sepia(1) saturate(1.45) hue-rotate(332deg) brightness(.86); }
+html[data-theme="pattern2"] .benefits { background: linear-gradient(180deg, #fff 0%, #fff 55%, #fff6ef 55%, #fff6ef 100%); }
+html[data-theme="pattern2"] .benefit-grid .benefit-banner { border-top-width: 5px; box-shadow: 0 14px 32px rgba(103,56,25,.1); }
+html[data-theme="pattern2"] .process { background: #3b2a22; }
 html[data-theme="pattern2"] .process-grid article { border: 1px solid rgba(255,255,255,.13); border-top: 4px solid var(--orange); background: rgba(255,255,255,.07); }
-html[data-theme="pattern2"] .faq { background: var(--indigo); }
-html[data-theme="pattern2"] .faq h2 { color: #fff; }
-html[data-theme="pattern2"] .faq details { border-color: transparent; box-shadow: 0 8px 22px rgba(0,0,0,.13); }
+html[data-theme="pattern2"] .process-grid p { color: #f3e5dc; }
+html[data-theme="pattern2"] .faq { background: #fff6ef; }
+html[data-theme="pattern2"] .faq h2 { color: var(--ink); }
+html[data-theme="pattern2"] .faq details { border-color: #f1ded1; box-shadow: 0 8px 22px rgba(103,56,25,.09); }
 html[data-theme="pattern2"] .apply { background: linear-gradient(140deg, #dc4d08, var(--orange-light)); }
 html[data-theme="pattern2"] .apply .section-kicker { color: #fff3eb; }
 html[data-theme="pattern2"] .apply-heading > p:last-child { color: #fff; }
 html[data-theme="pattern2"] .contact-form { box-shadow: 0 24px 58px rgba(71,25,0,.24); }
-html[data-theme="pattern2"] .company { color: #fff; background: var(--indigo); }
+html[data-theme="pattern2"] .company { color: #fff; background: #3b2a22; }
 html[data-theme="pattern2"] .company-links a { color: #fff; }
-html[data-theme="pattern2"] .disclaimer { color: #c5d2df; }
-html[data-theme="pattern2"] .site-footer { border-top: 1px solid rgba(255,255,255,.1); background: var(--indigo-dark); }
-html[data-theme="pattern2"] .sticky-phone { color: var(--indigo-dark); background: #fff; }
+html[data-theme="pattern2"] .disclaimer { color: #eaded7; }
+html[data-theme="pattern2"] .site-footer { color: #e6d7cf; border-top: 1px solid rgba(255,255,255,.1); background: #211713; }
+html[data-theme="pattern2"] .sticky-phone { color: #fff; background: #3b2a22; }
 html[data-theme="pattern2"] .sticky-web { background: linear-gradient(120deg, var(--orange), var(--orange-light)); }
-html[data-theme="pattern2"] .thanks-page { background: var(--indigo); }
+html[data-theme="pattern2"] .thanks-page { background: #fff6ef; }
 html[data-theme="pattern2"] .thanks-card { border-top: 6px solid var(--orange); }
 
 @media (max-width: 800px) {
