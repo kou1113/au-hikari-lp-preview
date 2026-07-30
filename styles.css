@@ -23,8 +23,8 @@ a { color: inherit; }
 .sp-only { display: none; }
 
 .operator-bar { padding: 6px 0; border-bottom: 1px solid #eef0f3; background: #f8f9fb; color: #687383; font-size: 10px; }
-.operator-inner { display: flex; justify-content: space-between; gap: 16px; }
-.operator-inner p { margin: 0; }
+.operator-inner { display: block; text-align: left; }
+.operator-inner p { margin: 1px 0; }
 .site-header { position: relative; z-index: 5; background: #fff; border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 82px; display: flex; align-items: center; gap: 24px; }
 .brand { margin-right: auto; display: flex; align-items: center; gap: 11px; color: var(--indigo); text-decoration: none; line-height: 1.15; }
@@ -239,7 +239,7 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .container, .narrow { width: calc(100% - 28px); max-width: 1120px; }
   .sp-only { display: block; }
   .operator-bar { padding: 5px 0; font-size: 8px; }
-  .operator-inner { display: block; text-align: center; line-height: 1.45; }
+  .operator-inner { text-align: left; line-height: 1.45; }
   .operator-inner p { margin: 1px 0; }
   .operator-inner p { overflow-wrap: anywhere; }
   .header-inner { min-height: 64px; }
