@@ -19,5 +19,6 @@ form?.addEventListener('submit', (event) => {
     form.reportValidity();
     return;
   }
-  window.location.href = 'thanks.html';
+  const pattern = new URLSearchParams(window.location.search).get('pattern');
+  window.location.href = pattern === '2' ? 'thanks.html?pattern=2' : 'thanks.html';
 });
