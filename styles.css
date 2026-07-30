@@ -95,6 +95,7 @@ a { color: inherit; }
 .timing-notice { padding: 65px 0; text-align: center; background: var(--cream); border-block: 1px solid #ffe6d3; }
 .notice-mark { width: 58px; height: 58px; margin: 0 auto 18px; display: grid; place-items: center; color: var(--orange); border: 3px solid var(--orange); border-radius: 50%; font-size: 32px; font-weight: 900; }
 .timing-notice h2 { margin: 0 0 17px; color: var(--indigo); font-size: clamp(27px, 3vw, 36px); line-height: 1.45; }
+.notice-heading-line { display: block; }
 .timing-notice p { max-width: 720px; margin: auto; color: var(--muted); font-size: 14px; line-height: 1.9; }
 
 .section { padding: 90px 0; }
@@ -277,7 +278,8 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .choice-copy { min-height: auto; margin-bottom: 18px; }
   .choice-tel { font-size: 32px; }
   .timing-notice { padding: 50px 0; }
-  .timing-notice h2 { margin-bottom: 18px; font-size: 25px; line-height: 1.5; letter-spacing: -.02em; }
+  .timing-notice h2 { margin-bottom: 18px; font-size: clamp(20px, 5.9vw, 24px); line-height: 1.55; letter-spacing: -.035em; }
+  .notice-heading-line { white-space: nowrap; }
   .timing-notice p { font-size: 13px; line-height: 1.85; text-align: left; }
   .section { padding: 64px 0; }
   .section-kicker { margin-bottom: 7px; font-size: 10px; letter-spacing: .16em; }
