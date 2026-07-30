@@ -394,30 +394,30 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .sticky-cta b { font-size: 11px; }
 }
 
-/* Pattern 2: warm white, orange and charcoal; intentionally no navy or blue */
+/* Pattern 2: white and orange only */
 html[data-theme="pattern2"] {
   --orange: #f36a21;
   --orange-light: #ff944d;
-  --indigo: #4a352b;
-  --indigo-dark: #2a1c16;
+  --indigo: #e8560b;
+  --indigo-dark: #c94100;
   --cream: #fff6ef;
-  --ink: #302823;
-  --muted: #746862;
-  --line: #eadfd7;
-  --shadow: 0 18px 48px rgba(76, 45, 26, .16);
+  --ink: #b83a00;
+  --muted: #cc622b;
+  --line: #ffd6bf;
+  --shadow: 0 18px 48px rgba(218, 77, 0, .16);
   background: #fffaf6;
 }
 html[data-theme="pattern2"] .lp-body { background: #fffaf6; }
-html[data-theme="pattern2"] .operator-bar { color: #fff3eb; border-bottom-color: rgba(255,255,255,.14); background: #3b2a22; }
-html[data-theme="pattern2"] .site-header { border-bottom: 4px solid var(--orange); box-shadow: 0 8px 22px rgba(76,45,26,.15); }
+html[data-theme="pattern2"] .operator-bar { color: #fff; border-bottom-color: rgba(255,255,255,.22); background: #e8560b; }
+html[data-theme="pattern2"] .site-header { border-bottom: 4px solid var(--orange); box-shadow: 0 8px 22px rgba(218,77,0,.15); }
 html[data-theme="pattern2"] .brand strong { color: var(--indigo-dark); }
 html[data-theme="pattern2"] .header-apply { background: linear-gradient(110deg, var(--orange), var(--orange-light)); }
 html[data-theme="pattern2"] .hero-pattern1 { display: none; }
 html[data-theme="pattern2"] .hero-pattern2 { display: block !important; }
 html[data-theme="pattern2"] .hero-new { padding-bottom: 28px; background: #fffaf6; }
-html[data-theme="pattern2"] .hero-banner { border: 2px solid #ffe0cc; background: #fff8ef; box-shadow: 0 24px 58px rgba(103,56,25,.16); }
+html[data-theme="pattern2"] .hero-banner { border: 2px solid #ffe0cc; background: #fff8ef; box-shadow: 0 24px 58px rgba(218,77,0,.14); }
 html[data-theme="pattern2"] .quick-contact { padding-top: 0; background: #fffaf6; }
-html[data-theme="pattern2"] .contact-choice { border: 1px solid #ffe0cc; border-top: 6px solid var(--orange); box-shadow: 0 22px 52px rgba(103,56,25,.14); }
+html[data-theme="pattern2"] .contact-choice { border: 1px solid #ffe0cc; border-top: 6px solid var(--orange); box-shadow: 0 22px 52px rgba(218,77,0,.13); }
 html[data-theme="pattern2"] .moving-support { background: #fffaf6; }
 html[data-theme="pattern2"] .moving-support-heading h2 { color: var(--ink); }
 html[data-theme="pattern2"] .moving-support-heading p { color: var(--muted); }
@@ -426,28 +426,34 @@ html[data-theme="pattern2"] .timing-notice { border-block: 0; background: #fff; 
 html[data-theme="pattern2"] .pricing { background: #fff0e5; }
 html[data-theme="pattern2"] .pricing h2 { color: var(--ink); }
 html[data-theme="pattern2"] .pricing .section-intro { color: var(--muted); }
-html[data-theme="pattern2"] .price-card { border-color: #f3d8c7; box-shadow: 0 18px 42px rgba(103,56,25,.14); }
+html[data-theme="pattern2"] .price-card { border-color: #ffd8c2; box-shadow: 0 18px 42px rgba(218,77,0,.13); }
 html[data-theme="pattern2"] .price-card-head { background: var(--indigo-dark); }
 html[data-theme="pattern2"] .price-card.featured .price-card-head { background: var(--orange); }
 html[data-theme="pattern2"] .building-illustration,
-html[data-theme="pattern2"] .phone-benefit .benefit-icon { filter: sepia(1) saturate(1.45) hue-rotate(332deg) brightness(.86); }
+html[data-theme="pattern2"] .phone-benefit .benefit-icon { filter: sepia(1) saturate(5) hue-rotate(338deg) brightness(1.02); }
 html[data-theme="pattern2"] .benefits { background: linear-gradient(180deg, #fff 0%, #fff 55%, #fff6ef 55%, #fff6ef 100%); }
-html[data-theme="pattern2"] .benefit-grid .benefit-banner { border-top-width: 5px; box-shadow: 0 14px 32px rgba(103,56,25,.1); }
-html[data-theme="pattern2"] .process { background: #3b2a22; }
+html[data-theme="pattern2"] .benefit-grid .benefit-banner { border-top-width: 5px; box-shadow: 0 14px 32px rgba(218,77,0,.09); }
+html[data-theme="pattern2"] .benefit-grid article > span { color: #ffe0cc; }
+html[data-theme="pattern2"] .process { background: #e8560b; }
 html[data-theme="pattern2"] .process-grid article { border: 1px solid rgba(255,255,255,.13); border-top: 4px solid var(--orange); background: rgba(255,255,255,.07); }
-html[data-theme="pattern2"] .process-grid p { color: #f3e5dc; }
+html[data-theme="pattern2"] .process-grid p { color: #fff; }
 html[data-theme="pattern2"] .faq { background: #fff6ef; }
 html[data-theme="pattern2"] .faq h2 { color: var(--ink); }
-html[data-theme="pattern2"] .faq details { border-color: #f1ded1; box-shadow: 0 8px 22px rgba(103,56,25,.09); }
+html[data-theme="pattern2"] .faq details { border-color: #ffdcc7; box-shadow: 0 8px 22px rgba(218,77,0,.08); }
 html[data-theme="pattern2"] .apply { background: linear-gradient(140deg, #dc4d08, var(--orange-light)); }
 html[data-theme="pattern2"] .apply .section-kicker { color: #fff3eb; }
 html[data-theme="pattern2"] .apply-heading > p:last-child { color: #fff; }
 html[data-theme="pattern2"] .contact-form { box-shadow: 0 24px 58px rgba(71,25,0,.24); }
-html[data-theme="pattern2"] .company { color: #fff; background: #3b2a22; }
+html[data-theme="pattern2"] input,
+html[data-theme="pattern2"] textarea,
+html[data-theme="pattern2"] select { color: #b83a00; border-color: #ffc7a7; background: #fffaf6; }
+html[data-theme="pattern2"] input::placeholder,
+html[data-theme="pattern2"] textarea::placeholder { color: #dc885c; }
+html[data-theme="pattern2"] .company { color: #fff; background: #e8560b; }
 html[data-theme="pattern2"] .company-links a { color: #fff; }
-html[data-theme="pattern2"] .disclaimer { color: #eaded7; }
-html[data-theme="pattern2"] .site-footer { color: #e6d7cf; border-top: 1px solid rgba(255,255,255,.1); background: #211713; }
-html[data-theme="pattern2"] .sticky-phone { color: #fff; background: #3b2a22; }
+html[data-theme="pattern2"] .disclaimer { color: #fff4ed; }
+html[data-theme="pattern2"] .site-footer { color: #fff; border-top: 1px solid rgba(255,255,255,.18); background: #c94100; }
+html[data-theme="pattern2"] .sticky-phone { color: #c94100; background: #fff; }
 html[data-theme="pattern2"] .sticky-web { background: linear-gradient(120deg, var(--orange), var(--orange-light)); }
 html[data-theme="pattern2"] .thanks-page { background: #fff6ef; }
 html[data-theme="pattern2"] .thanks-card { border-top: 6px solid var(--orange); }
