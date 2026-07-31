@@ -20,5 +20,5 @@ form?.addEventListener('submit', (event) => {
     return;
   }
   const pattern = new URLSearchParams(window.location.search).get('pattern');
-  window.location.href = pattern === '2' ? 'thanks.html?pattern=2' : 'thanks.html';
+  window.location.href = pattern === '1' ? 'thanks.html?pattern=1' : 'thanks.html';
 });
