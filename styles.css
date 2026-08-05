@@ -405,7 +405,7 @@ html[data-theme="pattern2"] {
   --muted: #cc622b;
   --line: #ffd6bf;
   --shadow: 0 18px 48px rgba(218, 77, 0, .16);
-  background: #fffaf6;
+  background: #fff;
 }
 html[data-theme="pattern2"] .lp-body { background: #fff; }
 html[data-theme="pattern2"] .operator-bar { color: #8a4b2a; border-bottom-color: #f2e3da; background: #fff; }
