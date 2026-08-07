@@ -249,11 +249,10 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .brand strong { white-space: nowrap; font-size: clamp(17px, 5.3vw, 21px); }
   .brand small { margin-top: 3px; font-size: 8px; }
   .header-contact { display: none; }
-  .header-phone-mobile, .header-apply { flex: 0 0 auto; min-width: 76px; min-height: 42px; padding: 6px 8px; justify-content: center; align-items: center; border-radius: 8px; font-size: 11px; line-height: 1; }
-  .header-phone-mobile { display: flex; gap: 4px; color: #fff; background: linear-gradient(110deg, var(--indigo), var(--indigo-dark)); box-shadow: 0 7px 17px rgba(0,91,159,.22); text-decoration: none; }
+  .header-phone-mobile { flex: 0 0 auto; min-width: 142px; min-height: 42px; padding: 6px 10px; display: flex; justify-content: center; align-items: center; gap: 5px; color: #fff; border-radius: 8px; background: linear-gradient(110deg, var(--indigo), var(--indigo-dark)); box-shadow: 0 7px 17px rgba(0,91,159,.22); font-size: 13px; line-height: 1; text-decoration: none; }
   .header-phone-mobile span { font-size: 15px; }
   .header-phone-mobile b { white-space: nowrap; font-weight: 900; }
-  .header-apply { display: flex; box-shadow: 0 7px 17px rgba(233,85,4,.22); }
+  .header-apply { display: none; }
   .header-apply-pc { display: none; }
   .header-apply-mobile { display: inline; white-space: nowrap; }
   .hero-new { padding: 10px 0 2px; }
@@ -293,16 +292,19 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .hero-cta { min-height: 57px; margin-inline: auto; }
   .hero-cta b { font-size: 16px; }
   .quick-contact { padding: 12px 0 48px; }
-  .contact-choice { padding: 28px 18px; grid-template-columns: 1fr; gap: 27px; border-radius: 20px; box-shadow: 0 14px 34px rgba(21,45,91,.1); }
-  .phone-choice { order: 1; }
-  .choice-divider { order: 2; }
-  .web-choice { order: 3; }
+  .contact-choice { padding: 20px 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border-radius: 20px; box-shadow: 0 14px 34px rgba(21,45,91,.1); }
+  .web-choice { order: 1; }
+  .phone-choice { order: 2; }
+  .choice-divider { display: none; }
   .choice-item, .choice-copy, .choice-item p, .choice-points, .pill-button { min-width: 0; max-width: 100%; }
-  .pill-button { width: 100%; }
-  .choice-points { flex-wrap: wrap; }
-  .choice-divider { width: 100%; height: 1px; }
-  .choice-copy { min-height: auto; margin-bottom: 18px; }
-  .choice-tel { font-size: 32px; }
+  .pill-button { width: 100%; min-height: 52px; padding: 10px 6px; gap: 5px; font-size: 13px; }
+  .pill-button span { font-size: 19px; }
+  .choice-points { display: none; }
+  .choice-copy { min-height: 86px; margin-bottom: 10px; }
+  .choice-item p { font-size: 11px; line-height: 1.4; }
+  .choice-item p b { font-size: 15px; }
+  .choice-tel { margin-block: 5px; font-size: clamp(18px, 5.5vw, 23px); }
+  .choice-item small { font-size: 7px; line-height: 1.35; }
   .timing-notice { padding: 50px 0; }
   .timing-notice h2 { margin-bottom: 18px; font-size: clamp(20px, 5.9vw, 24px); line-height: 1.55; letter-spacing: -.035em; }
   .notice-heading-line { white-space: nowrap; }
@@ -388,6 +390,8 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(235,85,5,.16
   .contact-choice { padding-inline: 14px; }
   .choice-tel { font-size: 27px; }
   .pill-button { min-height: 58px; padding-inline: 12px; font-size: 16px; }
+  .contact-choice .pill-button { min-height: 50px; padding-inline: 4px; font-size: 11px; }
+  .contact-choice .choice-tel { font-size: 17px; }
   .timing-notice h2, .section h2 { font-size: 25px; }
   .price-card-head strong { font-size: 17px; }
   .price-card-body { padding-inline: 4px; }
