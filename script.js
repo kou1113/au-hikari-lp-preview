@@ -5,13 +5,14 @@ const mobileViewport = window.matchMedia('(max-width: 800px)');
 const updateStickyCta = () => {
   if (!stickyCta) return;
 
-  const shouldShow = mobileViewport.matches;
+  const shouldShow = mobileViewport.matches && window.scrollY > 20;
   stickyCta.classList.toggle('is-visible', shouldShow);
   stickyCta.setAttribute('aria-hidden', String(!shouldShow));
 };
 
 updateStickyCta();
 mobileViewport.addEventListener?.('change', updateStickyCta);
+window.addEventListener('scroll', updateStickyCta, { passive: true });
 
 form?.addEventListener('submit', (event) => {
   event.preventDefault();
